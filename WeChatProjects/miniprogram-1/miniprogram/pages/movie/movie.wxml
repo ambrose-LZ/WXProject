@@ -1,0 +1,16 @@
+<!--pages/movie/movie.wxml-->
+<view class="list" wx:for="{{listmovie}}" wx:key="index">
+<image src="{{item.images.small}}"></image>
+<view class="list-right">
+<view class="dis">
+<text>{{item.title}}</text>
+<view class="score">猫眼评分:<text>{{item.rating.average}}</text></view>
+<view class="act">主演:
+<text  wx:for="{{item.casts}}" wx:key="index">{{item.name}}/</text>
+
+</view>
+<text>上映时间:{{item.year}}</text>
+</view>
+<van-button round bindtap="buy" class="buy" data-id="{{item.id}}" type="danger">详情</van-button>
+</view>
+</view>

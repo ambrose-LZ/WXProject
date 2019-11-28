@@ -1,0 +1,56 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>
+<view style="margin-top:20px;">
+  <text>朴素按钮</text>
+  <text>通过plain属性将按钮设置为朴素按钮，朴素按钮的文字为按钮颜色，背景为白色---------</text>
+  <van-button plain type="primary">朴素按钮</van-button>
+  <van-button plain type="danger">朴素按钮</van-button>
+</view>
+<view style="margin-top:20px;">
+  <text>细边框</text>
+  <text>设置hairline属性可以开启 0.5px 边框，基于伪类实现</text>
+  <van-button plain hairline type="primary">细边框按钮</van-button>
+  <van-button plain hairline type="danger">细边框按钮</van-button>
+</view>
+<view style="margin-top:20px;">
+  <text>禁用状态</text>
+  <text>通过disabled属性来禁用按钮，此时按钮不可点击</text>
+  <van-button disabled type="primary">禁用状态</van-button>
+  <van-button disabled type="danger">禁用状态</van-button>
+</view>
+<view style="margin-top:20px;">
+  <text>加载状态</text>
+  <van-button loading type="primary" />
+  <van-button loading type="danger" loading-text="加载中..." />
+</view>
+<view style="margin-top:20px;">
+  <text>图标按钮</text>
+  <text>通过icon属性设置按钮图标，支持 Icon 组件里的所有图标，也可以传入图标 URL</text>
+  <van-button icon="star-o" type="primary" />
+  <van-button icon="star-o" type="primary">按钮</van-button>
+  <van-button icon="https://img.yzcdn.cn/vant/logo.png" type="danger">按钮</van-button>
+</view>
+<view style="margin-top:20px;">
+  <text>按钮形状</text>
+  <van-button square type="primary">方形按钮</van-button>
+  <van-button round type="danger">圆形按钮</van-button>
+</view>
+<view style="margin-top:20px;">
+  <text>按钮尺寸</text>
+  <text>支持large、normal、small、mini四种尺寸，默认为normal</text>
+  <van-button type="primary" size="large">大号按钮</van-button>
+  <van-button type="primary" size="normal">普通按钮</van-button>
+  <van-button type="primary" size="small">小型按钮</van-button>
+  <van-button type="primary" size="mini">迷你按钮</van-button>
+</view>
+<view style="margin-top:20px;">
+  <text>自定义颜色</text>
+  <text>通过color属性可以自定义按钮的颜色</text>
+  <van-button color="#7232dd">自定义颜色</van-button>
+  <van-button color="#7232dd" plain>自定义颜色</van-button>
+</view>

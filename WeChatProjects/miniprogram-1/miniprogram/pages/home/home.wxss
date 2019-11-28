@@ -1,0 +1,2 @@
+/* pages/home/home.wxss */
+text{display: block;font-size: 15px;}

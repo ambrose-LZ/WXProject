@@ -1,0 +1,4 @@
+/* pages/mymovielist/mymovielist.wxss */
+.con{display: flex;flex-direction: column;border:1px solid #684;border-radius: 30rpx;box-shadow: 10rpx 0 #ccc 10rpx;margin:  20rpx;padding:20rpx;text-align: center;}
+.con .img{display: flex;justify-content: center;}
+.con .img image{width: 220rpx;height: 220rpx;border:1px solid rebeccapurple;margin: 20rpx;}

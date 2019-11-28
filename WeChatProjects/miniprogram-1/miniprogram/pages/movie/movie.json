@@ -1,0 +1,8 @@
+{
+
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index"
+  }
+
+}

@@ -1,0 +1,25 @@
+<!--pages/comment/comment.wxml-->
+<view class="bg">
+<!-- 评分 -->
+<view class="star">
+  <text>{{star}}</text>
+  <!-- list.rating.average  -->
+  <van-rate value="{{value}}" size="{{ 35 }}"  color="#f44" void-color="#eee" void-icon="star" bind:change="onChange"/>
+</view>
+  <!-- 输入信息 -->
+<van-cell-group>
+  <van-field value="{{ title }}" placeholder="添加标题"  border="{{ false }}"  bind:change="onMess"/>
+</van-cell-group>
+<!-- 上传+发布 -->
+<view class="con">
+  <view > <image wx:for="{{images}}" wx:key="index"  data-index="{{index}}" src="{{item}}" bindlongpress="deleteImage"></image></view>
+   <textarea placeholder="写点什么吧"  value="{{ mes }}"></textarea>
+</view>
+
+ <van-tabbar active="{{ active }}">
+  <van-tabbar-item icon="photo-o" bindtap="send">上传图片</van-tabbar-item>
+  <van-tabbar-item icon="friends-o" bindtap="say">发布评论</van-tabbar-item>
+</van-tabbar>
+   
+
+</view>

@@ -1,0 +1,75 @@
+<!--pages/movieDetails/movieDetails.wxml-->
+<view class="bg">
+<view class="content">
+  <image class="view-img" src="{{list.images.small}}"></image>
+  <view class="right">
+    <text class="title">{{list.title}}</text>
+    <text class="name">{{list.original_title}}</text>
+    <text class="con">{{list.countries}}/{{list.languages}}</text>
+    <view class="tags"> <text  wx:for="{{list.tags}}" wx:key="index">{{item}}/</text></view>
+    <view class="casts"> <text  wx:for="{{list.casts}}" wx:key="index">{{item.name}}/</text></view>
+    <view class="data"> <text  wx:for="{{list.pubdates}}" wx:key="index">{{item}}/</text></view>
+    <view class="st">
+      <van-button icon="star-o" size="normal">看过</van-button>
+      <van-button icon="like-o"  size="normal" >想看</van-button>
+    </view>
+  </view>
+</view>
+
+
+<!-- 简介 -->
+<view class="introduction">
+  <text>简介</text>
+  <text>{{list.summary}}</text>
+</view>
+
+
+<!-- 短评 -->
+<view class="short">
+  <view> <text>短评</text><text>全部{{list.comments_count}}</text></view>
+  <view wx:for="{{list.popular_comments}}" wx:key="index" class="short-list">
+     <view class="short-list-top">
+      <image src="{{item.author.avatar}}"></image> 
+      <view class="short-list-author">
+       <text>{{item.author.name}}</text>
+       <view class="short-list-score"><van-rate value="{{item.rating.value}}" size="{{ 10 }}" allow-half color="#f44" void-color="#ccc" void-icon="star"/><text>{{list.pubdate}}</text></view>
+      </view>
+     </view>
+     <text class="short-con">{{item.content}}</text>
+     <view class="good"><image src="../../images/good.png"></image><text>{{item.useful_count}}</text></view>      
+  </view>
+
+</view> 
+
+
+<!-- 影评 -->
+<view class="popular_reviews">
+    <button></button>
+    <view class="rev">
+    <view><text>影评</text><text>7018</text></view>
+    <view bindtap="join" class="join" data-id="{{lid}}">参与评论</view>
+    </view>
+    <view class="rev-list">
+      <text>影评列表</text>
+    </view>
+    <view class="pop"  wx:for="{{list.popular_reviews}}" wx:key="index">
+      <view class="pv-top">
+       <image src="{{item.author.avatar}}"></image> 
+      <text>{{item.author.name}}</text>
+      <view class="pv-top-score">
+        <text>看过</text>
+        <van-rate value="{{ item.rating.value}}" size="{{ 12 }}" allow-half color="#f44" void-color="#ccc" void-icon="star" />
+      </view>
+      </view>
+      <text class="pv-title">{{item.title}}</text>    
+      <text class="pv-summary">{{item.summary}}</text>
+      <view class="pv-bottom">
+        <text>2453回复</text>
+        <text>2453有用</text>
+        <text>2453转发</text>
+      </view>
+    </view>
+    </view>
+
+
+</view>

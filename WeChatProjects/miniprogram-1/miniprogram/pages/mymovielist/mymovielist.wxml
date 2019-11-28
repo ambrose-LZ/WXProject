@@ -1,0 +1,7 @@
+<!--pages/mymovielist/mymovielist.wxml-->
+ <view class="con" wx:for="{{lovemovie}}" wx:key="index"  >
+ <view class="img"><image wx:for="{{item.fileids}}" wx:key="index" src="{{item}}"></image></view>
+  
+  <text>喜欢的电影名是:--{{item.moviename}}</text>
+  <text>喜欢的原因是:--{{item.content}}</text>
+</view>

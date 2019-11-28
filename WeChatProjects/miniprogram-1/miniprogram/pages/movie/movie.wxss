@@ -1,0 +1,11 @@
+/* pages/movie/movie.wxss */
+.list{display: flex;margin: 0 10px;}
+image{display: inline-block;width: 115px;height: 130px;background: orange;margin: 20px 0 0 0;}
+.list-right{width:100%;display: flex;border-bottom: 1px solid #ccc;margin: 20px 0 -5px 10px;justify-content: space-between;}
+.dis{display: flex;flex-direction: column;width: 200px;}
+.act,.score,text{color:#669;font-size: 14px;margin-top:5px;}
+.list-right text:nth-child(1){font-weight: bold; font-size: 20px;color: red}
+.buy{margin-top: 50px;}
+.list-right .dis .score text{color:orange;font-size: 16px;}
+.list-right .dis .act text{color:#669;font-size: 14px;font-weight: normal;}
+

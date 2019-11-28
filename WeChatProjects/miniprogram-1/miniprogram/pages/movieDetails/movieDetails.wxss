@@ -1,0 +1,55 @@
+/* pages/movieDetails/movieDetails.wxss */
+.bg{background: #49432D;opacity: 0.9;filter: blur(0rpx);}
+.mask{background: #49432D;z-index: 10;width: 100%;height: 100%;}
+.content{display: flex;padding: 20rpx;}
+.view-img{width: 200rpx;height: 260rpx;}
+.right{font-size: 16rpx;display: flex;flex-direction: column;margin-left: 20rpx;color:#B8B39F;}
+.right .title{color:white;font-weight: bold;font-size: 36rpx;}
+.name{margin: 10rpx 0 2rpx 0}
+.con,.tags,.casts,.data{margin-top: 8rpx;}
+.st{display: flex;}
+.content .van-button {color:white;background: #756F5F;border:none;height: 60rpx;line-height: 60rpx;margin: 10rpx 10rpx 0 0;width:200rpx;}
+.introduction{color:white ;font-size: 24rpx;line-height: 40rpx;display: flex;flex-direction: column;padding: 20rpx;}
+/* .detail-mask{position: absolute;left: 0;top: 0;z-index: -1;width: 100%;background: #49432D} */
+/* 短评 */
+.short{margin: 40rpx 20rpx;background: #66615E;padding: 10rpx;border-radius: 10rpx;}
+.short .short-list {display: flex;flex-direction: column;margin: 10rpx;padding: 30rpx 5rpx; border-bottom: 1px solid #ccc;}
+.short .short-list .short-list-top {display: flex;}
+.short .short-list .short-list-author {display: flex;flex-direction: column}
+.short .short-list .short-list-author text {color: white;font-size: 24rpx;}
+.short-list-score{display: flex}
+.short-list-score text{line-height: 50rpx;}
+
+.short .short-list image{width: 80rpx;height: 80rpx; background:purple;font-size: 30rpx;vertical-align: middle;margin-right: 10rpx;border-radius: 50%;}
+.short .short-con{color:white;font-size: 26rpx;margin: 30rpx 0; }
+.short .good text{font-size: 24rpx;color:white;line-height: 50rpx;}
+.short .good image{background: none;width: 30rpx;height: 30rpx;}
+
+
+/* 影评 */
+.popular_reviews{border-top-left-radius: 10rpx;border-top-right-radius: 10rpx;padding: 20rpx;background: #F8F7F3;}
+.popular_reviews button{background: #666;display:block;width: 50rpx;margin:0 auto;height: 10rpx;}
+.popular_reviews .rev{padding: 10rpx 0;border-bottom: 1px solid #ccc;display: flex;justify-content: space-between}
+.popular_reviews .rev view{display: flex}
+.popular_reviews .rev .join  {width: 100rpx;background:red;font-size: 20rpx;border: 1px solid red;border-radius: 100rpx;color: white;
+line-height: 50rpx;height: 50rpx;text-align: center;padding-left: 20rpx;}
+
+
+.popular_reviews .rev text{font-size: 24rpx;}
+.popular_reviews .rev text+text{font-size: 16rpx;display: table-cell;vertical-align:top}
+.popular_reviews .rev-list{padding: 10rpx 0;}
+.popular_reviews .rev-list text{font-size: 20rpx;}
+.pop{padding: 30rpx 20rpx;display: flex;flex-direction: column;background: white;margin-top:20rpx;}
+.pop .pv-top{display: flex;}
+.pop .pv-top image{width: 50rpx;height: 50rpx; background:purple;font-size: 30rpx;vertical-align: middle;margin-right: 10rpx;border-radius: 50%;}
+.pop .pv-top text{ font-size: 28rpx; margin-right: 8rpx;font-weight: lighter}
+.pop .pv-top .pv-top-score{display: flex;}
+.pop .pv-top .pv-top-score text{font-size: 16rpx;padding-top: 10rpx}
+.pop .pv-title{margin: 20rpx 0;font-size: 30rpx;font-weight: bolder;}
+.pop .pv-summary{font-size: 22rpx;}
+.pop .pv-bottom{margin-top: 20rpx;font-size: 20rpx;font-weight: lighter;}
+.pop .pv-bottom text{margin-right: 20rpx}
+
+
+
+.aaa{width: 30rpx;height: 30rpx;margin-right: 20rpx;}

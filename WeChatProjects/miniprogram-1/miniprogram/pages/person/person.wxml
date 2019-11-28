@@ -1,0 +1,17 @@
+<!--pages/person/person.wxml-->
+<!-- <text>pages/person/person.wxml</text> -->
+<view class="userinfo">
+  <view class="userinfo-avatar">
+    <open-data  type="userAvatarUrl"></open-data>
+    </view>
+  <view class="profile-name">
+    <open-data type="userNickName"></open-data>
+    <view class="about"> <text>关注 0</text><text>被关注 0</text></view>
+    
+  </view>
+  <view class="personpage"><text>个人主页 ></text></view>
+  
+</view>
+
+
+<button open-type="getUserInfo" bindgetuserinfo="getUserMess">获取用户信息</button>
